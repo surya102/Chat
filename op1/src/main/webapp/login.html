@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login to Talk</title>
+<link rel="stylesheet" href="css/loginstyle.css">
+<script>
+function func() {
+	var q = document.getElementById('1').value;
+	var q2 = document.getElementById('2').value;
+	if (q === "") {
+		alert("Enter login name");
+		q = document.getElementById('1').value;
+	}
+	else if (q2 === "") {
+		alert("Enter password");
+		q2 = document.getElementById('2').value;
+	}
+	else {
+		alert("Login Details Submitted");
+	}
+}
+</script>
+</head>
+<body>
+<h1> LOGIN </h1>
+  <div class="open">
+  <div class="form">
+  	<div class="login">LOGIN</div>
+     <form class="inform" action="acess" method="post">
+     <input type="text" class="box" placeholder="USERNAME" name="userid" id='1'>
+     <br>
+     <input type="password" class="box" placeholder="PASSWORD" name="pass" id='2'>
+     <br><button onclick="func()">LOGIN</button>
+     <br><button>CLOSE</button>
+     </form>
+  </div>
+  </div>
+</body>
+</html>
